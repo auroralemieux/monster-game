@@ -15,6 +15,7 @@ var fight = function(character, monster, player) {
       return fightMethods[c];
     };
     var characterFight = monsterChooses(c);
+
   } else {
     console.log("player saw first");
 
@@ -23,16 +24,27 @@ var fight = function(character, monster, player) {
 
 
 // sets the stats that will fight
-  if (characterFight === "fight") {
-    var monFight = monster.strengthStat;
-    var playFight = player.strengthStat;
-  } else if (characterFight === "freeze") {
-    var monFight = monster.stealthStat;
-    var playFight = player.stealthStat;
-  } else if (characterFight === "flee") {
-    var monFight = monster.speedStat;
-    var playFight = player.speedStat;
+  var validAnswer = false
+  while (validAnswer === false) {
+    if (characterFight === "fight") {
+      var monFight = monster.strengthStat;
+      var playFight = player.strengthStat;
+      validAnswer = true
+    } else if (characterFight === "freeze") {
+      var monFight = monster.stealthStat;
+      var playFight = player.stealthStat;
+      validAnswer = true
+    } else if (characterFight === "flee") {
+      var monFight = monster.speedStat;
+      var playFight = player.speedStat;
+      validAnswer = true
+    }
+    else {
+      console.log("player made invalid fight choice")
+      characterFight = prompt("Please enter a valid choice!", "FIGHT/FREEZE/FLEE");
+    };
   };
+
 
 // if the monster wins do this stuff
 
@@ -49,10 +61,7 @@ var fight = function(character, monster, player) {
     } else {
       alert("Oh no, the monster won! You have lost " + lostHitPoints + " hitpoints.");
     };
-    if (player.hitPoints <= 0) {
-      alert("Oh no! You have died. So sorry. Better luck next time!");
-      $(".monster").hide(); // FIX THIS! NEEDS TO EXIT
-    };
+
 
 
     // if the player wins do this stuff
@@ -67,11 +76,7 @@ var fight = function(character, monster, player) {
     } else {
       alert("Great job! You beat the monster and gained " + expGained + " experience points.");
     };
-    if (player.experience >= 100) {
-      console.log("Player wins from fight function")
-      alert("Congratulations! You have beat enough monsters for the locals to take it from here! Winner winner chicken dinner.");
-      $(".monster").hide();
-    };
+    
   };
 
 };
