@@ -1,0 +1,4 @@
+var gameExplanation = function() {
+  alert("You find yourself in a land where magical creatures are plaguing the population.\n\nThey are smart critters, and you will have to use your wits to defeat them. For some reason they resemble a black circle.\n\nEach time you encounter a monster you will have three options: FIGHT, FREEZE, or FLEE.\n\nChoose your method of battle to engage the monster, and see who wins!\n\nIf the monster sees you first, your stats will help you to beat its chosen attack.\n\nIf you win, you get some points. If you lose, you lose hitpoints. (You cannot gain back lost hitpoints.)\n\nYour object is to defeat all the monsters and free the land from their mayhem.\n\nIf you are lucky, you may find some objects along the way to help you in your quest!\n\nThe HELP button may be useful if you have any questions.");
+  console.log("instructions given");
+};
