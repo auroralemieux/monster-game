@@ -1,8 +1,13 @@
-- if you try to reroll after invalid, it accepts instead
+BUGS: 
+- FIXED 9/27/16: if you try to reroll after invalid, it accepts instead
+- FIXED 9/28/16: when fighting a monster, if you try to choose an option after an invalid entry, it just closes the dialogue box with nothing having happened
 - if you run through an entire game then click new game and start another one, it hasn't reset the stats from the first one so it glitches out and rolls two monsters right after one another, and finishes the second game
-- when fighting a monster, if you try to choose an option after an invalid entry, it just closes the dialogue box with nothing having happened
-- the monster's stats don't appear until after you have fought it
+- the monster's stats don't appear until after you have fought it - asynchronicity issue?
+- the player's stats should appear before the game explanation alert shows - asynchronicity issue?
+- the leveling up alert should only happen once (when you actually level up). currently alerts any time it checks and it's in the right range
 
-GOALS:
-- move the parts of main.js into a true MVC file system. How to call them as needed? How to split it up?
-- bugfixing -- does this have to do with asynchronicity?
+TODOS:
+- add monster images based on name
+- add high scores (option to remove winning at 100 pts)
+- monsters drop items and add inventory, can use items to boost stats etc.
+- easter egg of stats all 1 = huge bonus somehow.
