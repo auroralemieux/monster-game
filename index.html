@@ -1,0 +1,122 @@
+<html>
+<head>
+  <!--LINKS TO MY CSS AND BOOTSTRAP -->
+  <meta charset="utf-8">
+
+  <title>home</title>
+  <meta name="description" content="home">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.js" type="text/javascript"></script>
+  <script src="./js/fight_function.js"></script>
+  <script src="./js/main.js"></script>
+
+</head>
+<body class="index">
+
+  <div class="header">
+    <div class="container">
+      <ul class="witty">
+        <li>. . . are you strong enough? Fast enough? Or stealthy enough? Find out . . . </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="container">
+      <div class="left-side">
+        <ul class="button">
+          <li><a id="game-start">NEW GAME</a></li>
+        </ul>
+        <div class="stats-box">
+          <h3 id="player-stats">STATS</h3>
+          <p id="strength-stat">Strength: </p>
+          <p id="stealth-stat">Stealth: </p>
+          <p id="speed-stat">Speed: </p>
+          <p id="hitpoints">Hitpoints: </p>
+          <p id="experience">Experience: </p>
+
+        </div>
+        <div class="help">
+          <ul class="button">
+            <li><a id="help-button">HELP</a></li>
+          </ul>
+          <div class="help-popup">
+            <ul>
+              <li>For each 10 experience points you gain, you have a chance to get a useful item! (FEATURE NOT IMPLEMENTED YET.)</li><br>
+              <li>Monsters have Strength, Stealth, and Speed stats too. Pay attention to the monster names to figure out which ones are stronger, stealthier, or speedier.</li><br>
+              <li>Click on the black circles to fight the monsters. It doesn't really matter which one you click.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="playing-field">
+          <table>
+            <tr>
+              <td class="monster">
+              </td>
+              <td>
+              </td>
+              <td class="monster">
+              </td>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td>
+              </td>
+              <td class="monster">
+              </td>
+              <td>
+              </td>
+              <td class="monster">
+              </td>
+            </tr>
+            <tr>
+              <td class="monster">
+              </td>
+              <td>
+              </td>
+              <td class="monster">
+              </td>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td>
+              </td>
+              <td class="monster">
+              </td>
+              <td>
+              </td>
+              <td class="monster">
+              </td>
+            </tr>
+          </table>
+          <div class="monster-stats">
+            <ul>
+              <li id="monster-name"></li>
+              <li id="monster-strength"></li>
+              <li id="monster-stealth"></li>
+              <li id="monster-speed"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <ul id="author">
+        <li>aurora anderson</li>
+        <li>a^2</li>
+      </ul>
+    </div>
+  </div>
+
+
+</body>
+</html>

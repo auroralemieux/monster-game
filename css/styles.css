@@ -1,0 +1,134 @@
+.header {
+  height: 50px;
+  background-color:black;
+  margin-bottom:25px;
+}
+
+.header li {
+  color:white;
+  font-size: 14px;
+  float:right;
+  padding:20px;
+  font-family:sans-serif;
+  text-align:right;
+}
+
+.content {
+  clear:both;
+  height:auto;
+}
+
+.left-side {
+  min-width:150px;
+  min-height:400px;
+  float:left;
+}
+
+.button {
+  height: auto;
+  padding-left: 10px;
+  padding-right: 50px;
+  margin-left:-10px;
+}
+
+.button a {
+  font-size: 20px;
+  padding:10px;
+  color: #000;
+  font-family: sans-serif;
+  text-align:center;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#game-start:hover, #help-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.stats-box {
+  font-family:sans-serif;
+  height:auto;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-align:left;
+  min-width: inherit;
+}
+
+/** EVENTUALLY THIS SHOULD NOT BE A HIDDEN/SHOWN DIV **/
+.help-popup {
+  display:none;
+  font-family: sans-serif;
+  font-size: 12px;
+  text-align: left;
+  width: 250px;
+  margin-left:-30px;
+  list-style-type:circle;
+}
+
+h3 {
+  font-size: 14px;
+
+}
+
+p {
+  font-size: 12px;
+}
+
+
+
+.right-side {
+  float:left;
+  width:70%;
+  min-height:400px;
+}
+
+.playing-field {
+  padding: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.monster-stats {
+  font-size:12px;
+  text-align:left;
+  font-family: sans-serif;
+}
+.monster-stats li {
+  display:inline-block;
+  padding:5px;
+}
+
+.monster {
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color:black;
+  display:none;
+}
+.monster:hover {
+  background-color:white;
+}
+
+.footer {
+  clear:both;
+  background-color: black;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: white:
+}
+
+#author {
+  color:white;
+  margin: auto auto;
+}
+
+#author li {
+  display:inline-block;
+  padding: 20px;
+}
